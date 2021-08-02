@@ -1,0 +1,8 @@
+安装BT面板：wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh && sudo bash install.sh
+依赖库：
+wget --no-check-certificate https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css
+wget --no-check-certificate https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js
+wget --no-check-certificate https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css
+wget --no-check-certificate https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js
+wget --no-check-certificate https://cdnjs.cloudflare.com/ajax/libs/bootstrap-colorpicker/3.2.0/js/bootstrap-colorpicker.min.js
+wget --no-check-certificate https://cdnjs.cloudflare.com/ajax/libs/fingerprintjs2/2.0.3/fingerprint2.min.js
