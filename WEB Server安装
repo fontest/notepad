@@ -6,3 +6,26 @@ wget --no-check-certificate https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sel
 wget --no-check-certificate https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js
 wget --no-check-certificate https://cdnjs.cloudflare.com/ajax/libs/bootstrap-colorpicker/3.2.0/js/bootstrap-colorpicker.min.js
 wget --no-check-certificate https://cdnjs.cloudflare.com/ajax/libs/fingerprintjs2/2.0.3/fingerprint2.min.js
+
+
+
+https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css
+https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js
+https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css
+https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js
+https://cdnjs.cloudflare.com/ajax/libs/bootstrap-colorpicker/3.2.0/js/bootstrap-colorpicker.min.js
+https://cdnjs.cloudflare.com/ajax/libs/fingerprintjs2/2.0.3/fingerprint2.min.js
+
+
+
+sed -i s#https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css#/ku/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css#g `grep -rl "2.2.2/css/bootstrap-toggle.min.css" ./`
+
+sed -i s#https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js#/ku/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js#g `grep -rl "2.2.2/js/bootstrap-toggle.min.js" ./`
+
+sed -i s#https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css#/ku/bootstrap-select/1.13.1/css/bootstrap-select.min.css#g `grep -rl "1.13.1/css/bootstrap-select.min.css" ./`
+
+sed -i s#https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js#/ku/bootstrap-select/1.13.1/js/bootstrap-select.min.js#g `grep -rl "1.13.1/js/bootstrap-select.min.js" ./`
+
+sed -i s#https://cdnjs.cloudflare.com/ajax/libs/bootstrap-colorpicker/3.2.0/js/bootstrap-colorpicker.min.js#/ku/bootstrap-colorpicker/3.2.0/js/bootstrap-colorpicker.min.js#g `grep -rl "bootstrap-colorpicker.min.js" ./`
+
+sed -i s#https://cdnjs.cloudflare.com/ajax/libs/fingerprintjs2/2.0.3/fingerprint2.min.js#/ku/fingerprintjs2/2.0.3/fingerprint2.min.js#g `grep -rl "fingerprint2.min.js" ./`
